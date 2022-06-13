@@ -18,7 +18,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "author", schema = "books_catalog", catalog = "booksCatalog")
+@Table(name = "author")
 public class AuthorEntity {
 
   @GeneratedValue(strategy = GenerationType.IDENTITY)

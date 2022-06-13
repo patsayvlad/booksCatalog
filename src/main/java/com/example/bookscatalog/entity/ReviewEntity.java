@@ -18,7 +18,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "review", schema = "books_catalog", catalog = "booksCatalog")
+@Table(name = "review")
 public class ReviewEntity {
 
   @GeneratedValue(strategy = GenerationType.IDENTITY)

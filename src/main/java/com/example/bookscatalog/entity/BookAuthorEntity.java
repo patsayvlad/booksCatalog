@@ -2,8 +2,6 @@ package com.example.bookscatalog.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
 import javax.persistence.JoinColumn;
@@ -19,16 +17,14 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "book_author", schema = "books_catalog", catalog = "booksCatalog")
+@Table(name = "book_author")
 @IdClass(BookAuthorEntityPK.class)
 public class BookAuthorEntity {
 
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Id
   @Column(name = "isbn")
   private Long isbn;
 
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Id
   @Column(name = "id")
   private Long id;
