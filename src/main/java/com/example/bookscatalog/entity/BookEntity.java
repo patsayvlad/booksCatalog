@@ -1,5 +1,6 @@
 package com.example.bookscatalog.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -35,9 +36,11 @@ public class BookEntity {
   @Column(name = "create_date")
   private String createDate;
 
+  @JsonManagedReference
   @OneToMany(mappedBy = "bookByIsbn")
   private List<BookAuthorEntity> bookAuthorsByIsbn;
 
+  @JsonManagedReference
   @OneToMany(mappedBy = "bookByBookIsbn")
   private List<ReviewEntity> reviewsByIsbn;
 

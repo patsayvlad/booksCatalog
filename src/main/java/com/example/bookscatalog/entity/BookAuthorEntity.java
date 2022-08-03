@@ -1,5 +1,6 @@
 package com.example.bookscatalog.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -29,10 +30,13 @@ public class BookAuthorEntity {
   @Column(name = "id")
   private Long id;
 
+  @JsonBackReference
   @ManyToOne
   @JoinColumn(name = "isbn", referencedColumnName = "isbn", nullable = false, insertable = false, updatable = false)
   private BookEntity bookByIsbn;
 
+  //  @JsonIgnore
+  @JsonBackReference
   @ManyToOne
   @JoinColumn(name = "id", referencedColumnName = "id", nullable = false, insertable = false, updatable = false)
   private AuthorEntity authorById;

@@ -1,0 +1,15 @@
+INSERT INTO author (id, first_name, second_name) VALUES (1, 'Gretchen', 'Waller');
+INSERT INTO author (id, first_name, second_name) VALUES (2, 'Kaitlin', 'Barlow');
+INSERT INTO author (id, first_name, second_name) VALUES (3, 'Brenda', 'Espinoza');
+INSERT INTO author (id, first_name, second_name) VALUES (4, 'Cooper', 'Hodge');
+INSERT INTO author (id, first_name, second_name) VALUES (5, 'Alika', 'Carlson');
+INSERT INTO author (id, first_name, second_name) VALUES (6, 'Miriam', 'Carlson');
+INSERT INTO author (id, first_name, second_name) VALUES (7, 'Daryl', 'Cantu');
+INSERT INTO author (id, first_name, second_name) VALUES (8, 'Cairo', 'Cash');
+INSERT INTO author (id, first_name, second_name) VALUES (9, 'May', 'Christian');
+INSERT INTO author (id, first_name, second_name) VALUES (10, 'Darrel', 'Livingston');
+INSERT INTO author (id, first_name, second_name) VALUES (11, 'Davis', 'Marks');
+INSERT INTO author (id, first_name, second_name) VALUES (12, 'Anne', 'Guerra');
+INSERT INTO author (id, first_name, second_name) VALUES (13, 'Sydnee', 'Bass');
+INSERT INTO author (id, first_name, second_name) VALUES (14, 'Jared', 'Brennan');
+INSERT INTO author (id, first_name, second_name) VALUES (15, 'Hall', 'Espinoza');

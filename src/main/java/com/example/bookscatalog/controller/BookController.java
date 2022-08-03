@@ -13,14 +13,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("/books")
+@RequestMapping("/api/books") //todo
 public class BookController {
 
   private final BookService bookService;
 
   @GetMapping
   public List<BookEntity> getBooks() {
-    return bookService.findAll();
+    List<BookEntity> all = bookService.findAll();
+    return all;
   }
 
   @PostMapping("/add-book")

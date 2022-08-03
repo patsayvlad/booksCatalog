@@ -1,5 +1,6 @@
 package com.example.bookscatalog.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -41,6 +42,7 @@ public class ReviewEntity {
   @Column(name = "book_isbn")
   private Long bookIsbn;
 
+  @JsonBackReference
   @ManyToOne
   @JoinColumn(name = "book_isbn", referencedColumnName = "isbn", insertable = false, updatable = false)
   private BookEntity bookByBookIsbn;
